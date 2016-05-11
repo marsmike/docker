@@ -1,7 +1,20 @@
 # pharojenkins
 Jenkins Docker Image loaded with Pharo 40 prerequisites
 
-Example:
+Works best with jwilder/nginx-proxy Image:
+
+Run the nginx-proxy first:
+```
+docker run -d \
+  --name="nginx-proxy" \
+  --restart="always" \
+  -p 80:80 \
+  -v /srv/gitlab_push.conf:/etc/nginx/conf.d/gitlab_push.conf:ro \
+  -v /var/run/docker.sock:/tmp/docker.sock \
+  jwilder/nginx-proxy
+```
+
+Then run the Pharo WebDAV Server:
 ```
 docker run -d \
   --name pharojenkins \
@@ -13,3 +26,5 @@ docker run -d \
   -v /srv/jenkins_data:/var/jenkins_home \
   marsmike/pharojenkins
 ```
+
+And there you go, a nice jenkins server which can run Pharo 4.0 / 5.0 Jobs.
