@@ -2,7 +2,7 @@
 Jenkins Docker Image loaded with Pharo 40 prerequisites
 
 Example:
-'''
+```
 docker run -d \
   --name pharojenkins \
   -h hostname.domain.org \
@@ -12,4 +12,4 @@ docker run -d \
   -p 50000:50000 \
   -v /srv/jenkins_data:/var/jenkins_home \
   marsmike/pharojenkins
-'''
+```
