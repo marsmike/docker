@@ -27,8 +27,7 @@ RUN apt-get install -y libc6-dev:i386 libasound2:i386 libasound2-dev:i386 libaso
 RUN apt-get install -y build-essential gcc-multilib g++ libxext-dev
 RUN apt-get install -y libgl1-mesa-dev libgl1-mesa-glx:i386 mesa-common-dev
 
-RUN ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so /usr/lib/i386-linux-gnu/libGL.so
-#RUN ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/mesa/libGL.so
+RUN ln -s /usr/lib/i386-linux-gnu/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
 
 # switch back to user jenkins
 USER jenkins
