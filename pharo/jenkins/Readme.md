@@ -1,6 +1,8 @@
 # pharojenkins
 Jenkins Docker Image loaded with Pharo 40 prerequisites
 
+[![](https://imagelayers.io/badge/marsmike/pharo-jenkins:latest.svg)](https://imagelayers.io/?images=marsmike/pharo-jenkins:latest 'Get your own badge on imagelayers.io')
+
 Works best with jwilder/nginx-proxy Image:
 
 Run the nginx-proxy first:
