@@ -12,7 +12,7 @@ docker run -d \
   --name pharonvc \
   -p 58901:5901 \
   -v /srv/pharovnc:/var/lib/pharo/
-  marsmike/pharovnc
+  marsmike/pharo-vnc
 ```
 
 ToDo: SSH Tunneling and much more
