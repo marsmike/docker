@@ -15,7 +15,10 @@ docker run -d \
   jwilder/nginx-proxy
 ```
 
+
 Then run the WebDAV Image:
+
+
 ```
 docker run -d \
   --name webdav \
@@ -26,7 +29,7 @@ docker run -d \
   -e PASSWORD=webdav_password \
   -p 8082:80 \
   -v /srv/webdav:/var/webdav \
-  marsmike/webdav
+  marsmike/pharo-webdav
 ```
 
 Now you have your own Pharo Monticello Repository on http://host.domain.com secured with webdav_user / webdav_password.
