@@ -24,7 +24,7 @@ docker run -d \
   -p 8080:8080 \
   -p 50000:50000 \
   -v /srv/jenkins_data:/var/jenkins_home \
-  marsmike/pharojenkins
+  marsmike/pharo-jenkins
 ```
 
 And there you go, a nice jenkins server which can run Pharo 4.0 / 5.0 Jobs.
