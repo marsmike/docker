@@ -14,7 +14,7 @@ docker run -d \
   jwilder/nginx-proxy
 ```
 
-Then run the Pharo WebDAV Server:
+Then run the Jenkins Server:
 ```
 docker run -d \
   --name pharojenkins \
