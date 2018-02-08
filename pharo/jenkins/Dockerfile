@@ -5,7 +5,7 @@ ENV REFRESHED_AT 2016-05-30
 
 USER root
 RUN apt-get update
-RUN apt-get install -y software-properties-common python-software-properties
+RUN apt-get install -y software-properties-common
 
 # add sudo to the image
 RUN apt-get update \
