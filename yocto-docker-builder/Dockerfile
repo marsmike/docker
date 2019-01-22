@@ -1,6 +1,8 @@
 FROM ubuntu:16.04
 MAINTAINER Alex Gonzalez <alex@lindusembedded.com>
 
+#yoctocookbook2ndedition/docker-yocto-builder:fixed 
+
 # Upgrade system and Yocto Proyect basic dependencies
 RUN apt-get update && apt-get -y upgrade && apt-get -y install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat cpio python python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping libsdl1.2-dev xterm curl
 
@@ -29,7 +31,7 @@ WORKDIR ${YOCTO_INSTALL_PATH}
 # Set the Yocto release
 ENV YOCTO_RELEASE "pyro"
 
-# Install Poky
+# Install Poky 
 RUN git clone --branch ${YOCTO_RELEASE} git://git.yoctoproject.org/poky
 
 # Install FSL community BSP
