@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:trusty-20190515
 MAINTAINER mike@objektarium.de
 ENV REFRESHED_AT 2016-05-10
 
