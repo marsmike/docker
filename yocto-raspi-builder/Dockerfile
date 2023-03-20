@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20200807
 MAINTAINER Mike Mueller <mike@objektarium.de>
 
 ENV YOCTO_INSTALL_PATH "/opt/yocto"
