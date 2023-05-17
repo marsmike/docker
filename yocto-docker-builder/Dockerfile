@@ -1,4 +1,4 @@
-FROM ubuntu:xenial-20200706
+FROM ubuntu:xenial-20201030
 MAINTAINER Alex Gonzalez <alex@lindusembedded.com>
 
 #yoctocookbook2ndedition/docker-yocto-builder:fixed 
