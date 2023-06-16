@@ -1,4 +1,4 @@
-FROM ubuntu:xenial-20201030
+FROM ubuntu:xenial-20210114
 
 MAINTAINER Mike Mueller<mike@objektarium.de>
 
